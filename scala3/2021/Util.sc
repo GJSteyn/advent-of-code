@@ -7,3 +7,14 @@ def getInput(filePath: String): List[String] = {
 
   input
 }
+
+def gridToMap(input: List[List[Int]]): Map[(Int, Int), Int] = {
+  val indexed = for {
+    y <- (0 until input.length)
+    x <- (0 until input(0).length)
+  } yield {
+    (x, y) -> input(y)(x)
+  }
+
+  indexed.toMap
+}
