@@ -98,5 +98,11 @@ let package = Package(
         .target(
             name: "Day12Custom",
             dependencies: ["Util"]),
+        .target(
+            name: "Day13",
+            dependencies: ["Util"]),
+        .testTarget(
+            name: "Day13Tests",
+            dependencies: ["Day13"]),
     ]
 )
