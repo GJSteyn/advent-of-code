@@ -23,6 +23,9 @@ let package = Package(
 
         .target(
             name: "Util"),
+        .executableTarget(
+            name: "Main",
+            dependencies: ["Day24"]),
         .target(
             name: "Day01",
             dependencies: []),
@@ -116,5 +119,65 @@ let package = Package(
         .testTarget(
             name: "Day15Tests",
             dependencies: ["Day15"]),
+        .target(
+            name: "Day16",
+            dependencies: ["Util"]),
+        .testTarget(
+            name: "Day16Tests",
+            dependencies: ["Day16"]),
+        .target(
+            name: "Day17",
+            dependencies: ["Util"]),
+        .testTarget(
+            name: "Day17Tests",
+            dependencies: ["Day17"]),
+        .target(
+            name: "Day18",
+            dependencies: ["Util"]),
+        .testTarget(
+            name: "Day18Tests",
+            dependencies: ["Day18", "Util"]),
+        .target(
+            name: "Day19",
+            dependencies: ["Util"]),
+        .testTarget(
+            name: "Day19Tests",
+            dependencies: ["Day19", "Util"]),
+        .target(
+            name: "Day20",
+            dependencies: ["Util"]),
+        .testTarget(
+            name: "Day20Tests",
+            dependencies: ["Day20", "Util"]),
+        .target(
+            name: "Day21",
+            dependencies: ["Util"]),
+        .testTarget(
+            name: "Day21Tests",
+            dependencies: ["Day21", "Util"]),
+        .target(
+            name: "Day22",
+            dependencies: ["Util"]),
+        .testTarget(
+            name: "Day22Tests",
+            dependencies: ["Day22", "Util"]),
+        .target(
+            name: "Day23",
+            dependencies: ["Util"]),
+        .testTarget(
+            name: "Day23Tests",
+            dependencies: ["Day23", "Util"]),
+        .target(
+            name: "Day24",
+            dependencies: ["Util"]),
+        .testTarget(
+            name: "Day24Tests",
+            dependencies: ["Day24", "Util"]),
+        .target(
+            name: "Day25",
+            dependencies: ["Util"]),
+        .testTarget(
+            name: "Day25Tests",
+            dependencies: ["Day25", "Util"]),
     ]
 )
