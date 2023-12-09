@@ -1,0 +1,14 @@
+/Users/gert/Coding/AdventOfCode/fsharp/2023/src/Library/bin/Debug/net8.0/Library.deps.json
+/Users/gert/Coding/AdventOfCode/fsharp/2023/src/Library/bin/Debug/net8.0/Library.dll
+/Users/gert/Coding/AdventOfCode/fsharp/2023/src/Library/bin/Debug/net8.0/Library.pdb
+/Users/gert/Coding/AdventOfCode/fsharp/2023/src/Library/bin/Debug/net8.0/Library.xml
+/Users/gert/Coding/AdventOfCode/fsharp/2023/src/Library/obj/Debug/net8.0/Library.fsproj.AssemblyReference.cache
+/Users/gert/Coding/AdventOfCode/fsharp/2023/src/Library/obj/Debug/net8.0/Library.AssemblyInfoInputs.cache
+/Users/gert/Coding/AdventOfCode/fsharp/2023/src/Library/obj/Debug/net8.0/Library.AssemblyInfo.fs
+/Users/gert/Coding/AdventOfCode/fsharp/2023/src/Library/obj/Debug/net8.0/Library.fsproj.CoreCompileInputs.cache
+/Users/gert/Coding/AdventOfCode/fsharp/2023/src/Library/obj/Debug/net8.0/Library.sourcelink.json
+/Users/gert/Coding/AdventOfCode/fsharp/2023/src/Library/obj/Debug/net8.0/Library.dll
+/Users/gert/Coding/AdventOfCode/fsharp/2023/src/Library/obj/Debug/net8.0/refint/Library.dll
+/Users/gert/Coding/AdventOfCode/fsharp/2023/src/Library/obj/Debug/net8.0/Library.xml
+/Users/gert/Coding/AdventOfCode/fsharp/2023/src/Library/obj/Debug/net8.0/Library.pdb
+/Users/gert/Coding/AdventOfCode/fsharp/2023/src/Library/obj/Debug/net8.0/ref/Library.dll
