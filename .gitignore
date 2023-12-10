@@ -2,3 +2,6 @@
 .metals/
 .vscode/
 .idea/
+
+# Random Ionide VSCode plugin files
+.fake
