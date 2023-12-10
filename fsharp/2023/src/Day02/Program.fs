@@ -1,5 +1,6 @@
 ﻿open Library
 open FParsec
+open NUnit.Framework
 
 let testInput = """Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green
 Game 2: 1 blue, 2 green; 3 green, 4 blue, 1 red; 1 green, 1 blue
@@ -97,15 +98,25 @@ let solution2 (input: list<string>) =
     |> List.map (fun ((Amount(id), Game(sets))) -> maxColours sets)
     |> List.sum
 
+[<Test>]
+let Part1 () =
+    Assert.That(solution (testInputToList testInput), Is.EqualTo(8))
+    Assert.That(solution (readPuzzleList "day02"), Is.EqualTo(2720))
+
+[<Test>]
+let Part2 () =
+    Assert.That(solution2 (testInputToList testInput), Is.EqualTo(2286))
+    Assert.That(solution2 (readPuzzleList "day02"), Is.EqualTo(71535))
+
 [<EntryPoint>]
 let main args =
     // let input = testInputToList testInput
-    let input = readPuzzleList("day02")
+    let input = readPuzzleList "day02"
     let result = solution input
     printfn $"{result}"
 
     // let input2 = testInputToList testInput
-    let input2 = readPuzzleList("day02")
+    let input2 = readPuzzleList "day02"
     let result2 = solution2 input2
     printfn $"{result2}"
 

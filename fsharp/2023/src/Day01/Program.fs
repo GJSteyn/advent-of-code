@@ -1,5 +1,6 @@
 ﻿open System
 open Library
+open NUnit.Framework
 
 let testInput = """1abc2
 pqr3stu8vwx
@@ -45,15 +46,25 @@ let solution2 (input: list<string>) =
     |> List.map concatFirstLast
     |> List.sum
 
+[<Test>]
+let Part1 () =
+    Assert.That(solution (testInputToList testInput), Is.EqualTo(142))
+    Assert.That(solution (readPuzzleList "day01"), Is.EqualTo(54634))
+
+[<Test>]
+let Part2 () =
+    Assert.That(solution2 (testInputToList testInput2), Is.EqualTo(281))
+    Assert.That(solution2 (readPuzzleList "day01"), Is.EqualTo(53855))
+
 [<EntryPoint>]
 let main args =
     // let input = testInputToList testInput
-    let input = readPuzzleList("day01")
+    let input = readPuzzleList "day01"
     let result = solution input
     printfn $"{result}"
 
     // let input2 = testInputToList testInput2
-    let input2 = readPuzzleList("day01")
+    let input2 = readPuzzleList "day01"
     let result2 = solution2 input2
     printfn $"{result2}"
 
